@@ -1,0 +1,25 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<title>Memory Controller Verification Report</title>
+<style>
+ body { font: 14px system-ui; margin: 2rem; }
+ table { border-collapse: collapse; margin-bottom: 1rem; }
+ th, td { border: 1px solid #bbb; padding: 8px 10px; }
+ th { background: #f4f4f4; text-align: left; }
+ .pass { color: #0a0; font-weight: 600; }
+ .fail { color: #a00; font-weight: 600; }
+ code { background: #f7f7f7; padding: 2px 4px; border-radius: 4px; }
+</style>
+</head><body>
+<h1>Memory Controller Simulation Report</h1>
+<table>
+  <tr><th>Reads</th><th>Writes</th><th>Errors</th><th>Status</th></tr>
+  <tr>
+    <td>[% reads %]</td>
+    <td>[% writes %]</td>
+    <td>[% errors %]</td>
+    <td>[% IF status == 'PASS' %]<span class="pass">PASS</span>[% ELSE %]<span class="fail">FAIL</span>[% END %]</td>
+  </tr>
+</table>
+<p>Generated via Perl (Text::CSV_XS + Template Toolkit). Logs parsed from <code>out/logs/rtl.log</code>.</p>
+</body></html>
