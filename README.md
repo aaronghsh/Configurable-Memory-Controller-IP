@@ -102,7 +102,3 @@ This project demonstrates the intersection of **digital design** and **verificat
 - Scalable project hierarchy for real chip design environments  
 
 ---
-
-### 🧰 Topics  
-systemverilog · asic-design · soc · uvm · perl · rtl · quartus · digital-verification  
-
